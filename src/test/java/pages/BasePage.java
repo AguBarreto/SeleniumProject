@@ -30,7 +30,7 @@ public class BasePage {
         driver.get(url);
     }
 
-    public void closeBrowser(){
+    public static void closeBrowser(){
         driver.quit();
     }
 
