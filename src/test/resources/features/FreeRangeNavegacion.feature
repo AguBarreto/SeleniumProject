@@ -8,8 +8,8 @@ Feature: Navigation bar
         When I go to <section> using the navigation bar
         Examples:
             | section    |
-            | Cursos     |
             | Recursos   |
+            | Cursos     |
+            | Newsletter |
             | Udemy      |
             | Mentorías  |
-            | Newsletter |
