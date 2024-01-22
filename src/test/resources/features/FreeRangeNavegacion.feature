@@ -1,9 +1,15 @@
-Feature: Navegation Bar
+Feature: Navigation bar
     To see the subpages
-    Without loggin in
-    I can click the navegation bar links
-
-Scenario: I can acces the subpages the through navegation bar
-    Given I navegate to www.freerangetesters.com
-    
-    
+    Without logging in
+    I can click the navigation bar links
+ 
+    Scenario Outline: I can access the subpages through the navigation bar
+        Given I navigate to www.freerangetesters.com
+        When I go to <section> using the navigation bar
+        Examples:
+            | section    |
+            | Cursos     |
+            | Recursos   |
+            | Udemy      |
+            | Mentorías  |
+            | Newsletter |
